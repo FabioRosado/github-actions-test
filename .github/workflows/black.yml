@@ -12,5 +12,5 @@ jobs:
       - uses: actions/setup-python@v2
       - uses: rocioar/gradual-black-formatter@v1
       - uses: gr2m/create-or-update-pull-request-action@v1.2.2
-          env: 
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
