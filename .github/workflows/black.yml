@@ -6,9 +6,12 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs:
+      using: docker
+      image: Dockerfile
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-      - uses: psf/black@stable
+      # - uses: actions/setup-python@v2
+      # - uses: psf/black@stable
       - uses: gr2m/create-or-update-pull-request-action@v1.2.2
