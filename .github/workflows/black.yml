@@ -5,10 +5,10 @@ on:
   - pull_request
 
 jobs:
-  runs:
-    using: docker
-    image: Dockerfile
   lint:
+    runs:
+      using: docker
+      image: Dockerfile
     steps:
       - uses: actions/checkout@v2
       # - uses: actions/setup-python@v2
